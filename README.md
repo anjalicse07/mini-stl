@@ -1,30 +1,87 @@
 # Mini STL
 
-A custom implementation of parts of the C++ Standard Template Library (STL) in C++ for learning data structures, templates, iterators, and memory management.
+A custom implementation of core C++ STL components built from scratch to understand the internal design of containers, iterators, and data structures.
 
-## Implemented
+Implemented using modern C++ with templates, generic programming, and manual memory management.
 
--  Vector
--  Vector Iterator
--  Stack
--  Basic Algorithms
+---
 
-## In Progress
+## Implemented Components
 
--  Linked List
+### Containers
+- **Vector** - Dynamic array with resizing, reserve, copy/move semantics, and iterators.
+- **Pair** - Generic key-value structure similar to `std::pair`.
+- **Linked List** - Doubly linked list with insertion, deletion, and traversal.
+- **Stack** - LIFO container adapter.
+- **Queue** - FIFO container adapter.
+- **Map** - Ordered key-value container built on a Red-Black Tree.
+- **Set** - Ordered unique container built on a Red-Black Tree.
 
-## Planned
+### Trees
+- **Binary Search Tree**
+  - Insert, search, delete
+  - Custom comparators
+  - Deep copy support
+  - Iterator traversal
 
-- Queue
-- String
-- Pair
-- Map
-- Binary Search Tree
-- Set
-- Additional STL Algorithms
+- **Red-Black Tree**
+  - Left/right rotations
+  - Insert balancing
+  - Delete balancing
+  - O(log n) search, insertion, and deletion
 
-## Goals
+### Iterators
+Custom STL-style iterators supporting:
 
-- Understand how the STL works internally.
-- Practice modern C++.
-- Build reusable generic containers and algorithms.
+- Dereference (`*`)
+- Member access (`->`)
+- Prefix/postfix increment
+- Prefix/postfix decrement
+- Iterator comparison
+- Ordered traversal
+
+---
+
+## Design Highlights
+
+- Fully template-based generic containers
+- Manual memory management
+- Copy and move semantics
+- Custom comparators
+- STL-inspired API design
+- Modular header-only architecture
+
+---
+
+## Project Structure
+Mini-STL
+│
+├── include/
+│ ├── vector.h
+│ ├── list.h
+│ ├── stack.h
+│ ├── queue.h
+│ ├── bst.h
+│ ├── rbtree.h
+│ ├── map.h
+│ └── set.h
+│
+└── test/
+└── component tests
+
+
+---
+
+## Technologies
+
+- C++
+- Templates
+- Data Structures
+- Object-Oriented Programming
+- Memory Management
+
+---
+
+## Purpose
+
+This project recreates the core ideas behind the C++ STL while developing a deeper understanding of data structures, iterators, and library design.
